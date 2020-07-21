@@ -12,10 +12,11 @@ function Home(props) {
      <div style={{width: 600, marginTop: 60}}  className="center">
 
 
-         <h3>Get your virtual Card. </h3>
+         <h2>Get your Virtual Card. </h2>
+         <h5> Secure • Contact Less • Flexible </h5>
 
          <Button variant="contained" color="primary" onClick={() => props.history.push('/new')} >
-           Get Started
+           Proceed
          </Button>
 
 

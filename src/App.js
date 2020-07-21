@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../src/natwest-logo.jpg';
 import './App.css';
+import Button from '@material-ui/core/Button';
+import { withRouter } from 'react-router';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <img src={logo} style={{width: 600, marginTop: 60}}  className="center" alt="logo" />
+       <br></br>
+        
+          
+        <Button variant="contained" color="primary" onClick={() => props.history.push('/home')} >
+           Start Now 
+         </Button>
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
