@@ -27,7 +27,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Note: 
 For Windows, update below details in file 'package.json':
-"start": "PORT=4001 && react-scripts start"
+"start": "set PORT=4001 && react-scripts start"
 
 For MAC, update below details in file 'package.json':
 "start": "PORT=4001 react-scripts start"
